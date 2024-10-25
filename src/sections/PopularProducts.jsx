@@ -11,8 +11,8 @@ const PopularProducts = () => {
             </div>
             <div className='mt-16 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-4 gap-14 w-fit my-auto'>
                 {products.map((product, index) => (
-                    <ScrollAnimation animateIn='fadeInDownBig' delay={index === 0 ? 0 : index*100}>
-                        <PopularProductCard key={index} {...product} />
+                    <ScrollAnimation key={index} animateIn='fadeInDownBig' delay={index === 0 ? 0 : index*100}>
+                        <PopularProductCard {...product} />
                     </ScrollAnimation>
                 ))}
             </div>

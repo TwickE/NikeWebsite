@@ -16,8 +16,8 @@ const CustomerReviews = () => {
                 </ScrollAnimation>
                 <div className="mt-24 flex flex-1 justify-evenly items-center max-lg:flex-col gap-14">
                     {reviews.map((review, index) => (
-                        <ScrollAnimation animateIn='fadeInDownBig' delay={index === 0 ? 0 : index * 100}>
-                            <ReviewCard key={index} imgURL={review.imgURL} customerName={review.customerName} rating={review.rating} feedback={review.feedback} />
+                        <ScrollAnimation key={index} animateIn='fadeInDownBig' delay={index === 0 ? 0 : index * 100}>
+                            <ReviewCard imgURL={review.imgURL} customerName={review.customerName} rating={review.rating} feedback={review.feedback} />
                         </ScrollAnimation>
                     ))}
                 </div>

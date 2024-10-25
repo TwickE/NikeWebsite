@@ -4,7 +4,7 @@ import Button from '../components/Button'
 
 const SpecialOffer = () => {
     return (
-        <section className="flex items-center max-xl:flex-col-reverse gap-10 max-container">
+        <section className="flex items-center max-xl:flex-col-reverse gap-10 max-container padding">
             <div className="flex-1">
                 <img src={offer} alt="offer image collection" width={773} height={687} className='object-contain w-full' />
             </div>

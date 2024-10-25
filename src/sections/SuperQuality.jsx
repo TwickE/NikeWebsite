@@ -3,7 +3,7 @@ import { shoe8 } from '../assets/images/'
 
 const SuperQuality = () => {
     return (
-        <section id="about-us" className="flex justify-between items-center max-lg:flex-col gap-10 w-full max-container">
+        <section id="about-us" className="flex justify-between items-center max-lg:flex-col gap-10 w-full max-container padding">
             <div className="flex flex-1 flex-col">
                 <h2 className='font-palanquin text-4xl capitalize font-bold dark:text-slate-100 lg:max-w-lg'>
                     We Provide You

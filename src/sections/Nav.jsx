@@ -1,7 +1,7 @@
 import { headerLogo } from '../assets/images'
 import { navLinks } from '../constants'
 import { useEffect, useState } from 'react'
-import Button from './Button'
+import Button from '../components/Button'
 
 const Nav = () => {
     const [mobileMenuActive, setMobileMenuActive] = useState(false)

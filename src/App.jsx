@@ -7,6 +7,7 @@ import SpecialOffer from './sections/SpecialOffer'
 import CustomerReviews from './sections/CustomerReviews'
 import Subscribe from './sections/Subscribe'
 import Footer from './sections/Footer'
+import "animate.css/animate.compat.css"
 
 const App = () => (
     <>

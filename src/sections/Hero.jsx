@@ -4,12 +4,13 @@ import { arrowRight } from '../assets/icons'
 import { statistics, shoes } from '../constants'
 import { bigShoe1 } from '../assets/images'
 import { useState } from 'react'
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const Hero = () => {
     const [bigShoeImg, setBigShoeImg] = useState(bigShoe1)
     return (
         <section className="xl:padding-l wide:padding-r padding-b">
-            <div id='home' className='w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container'>
+            <ScrollAnimation animateIn='fadeInDown' id='home' className='w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container'>
                 <div className='relatve xl:w-2/5 flex flex-col justify-center items-start w-full max-xl:padding-x pt-28'>
                     <p className='text-xl font-montserrat text-coral-red'>Our Summer Collection</p>
                     <h1 className='mt-10 font-palanquin text-8xl max-sm:text-[72px] max-sm:leading[82px] font-bold dark:text-slate-100'>
@@ -38,9 +39,8 @@ const Hero = () => {
                         ))}
                     </div>
                 </div>
-            </div>
+            </ScrollAnimation>
         </section>
-
     )
 }
 

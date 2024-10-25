@@ -10,7 +10,7 @@ const Nav = () => {
     const getTheme = () => {
         if (localStorage.theme === 'dark') {
             return 'dark'
-        } else if(localStorage.theme === 'light') {
+        } else if (localStorage.theme === 'light') {
             return 'light'
         } else {
             return 'system'
